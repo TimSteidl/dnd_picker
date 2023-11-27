@@ -22,7 +22,6 @@ export const sources = [
   "/assets/spears_in_ice.png",
   "/assets/splinters_of_faith.png",
   "/assets/spring_rites.png",
-  "/assets/the_dogs_of_orcus.png",
   "/assets/tomb_of_mercy.png",
   "/assets/tomb_of_tiberesh.png",
   "/assets/triptych.png",
