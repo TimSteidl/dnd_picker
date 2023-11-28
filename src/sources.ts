@@ -3,6 +3,8 @@ export interface Source {
   image: string;
   description: string;
   details: boolean;
+  englischDescription: string;
+  locale: boolean;
 }
 
 export const sourceData: Source[] = [
@@ -32,6 +34,29 @@ export const sourceData: Source[] = [
       "Raubtiere, die Stadt lebt von der Energie ihrer\n" +
       "eigener Mangel an Harmonie.",
     details: true,
+    englischDescription:
+      "In southern Nuria Natal, where the great River Nuria\n" +
+      "narrows into a gorge hundreds of miles long, the river\n" +
+      "streams around the monolithic ankles of 800-foot-tall\n" +
+      "statues of gods. Their towering forms loom over the\n" +
+      "river just before its waters course out into the open\n" +
+      "desert again, broadening and slowing at the foot of the\n" +
+      "gleaming city called Per-Bastet.\n" +
+      "Thriving, bewildering, and roiling with frenetic life,\n" +
+      "the City of Cats has stood for unknown thousands of\n" +
+      "years at the crossroads of the Southlands. It is a city of\n" +
+      "nine districts, nine pyramids, and nine lives. Each time\n" +
+      "the city has fallen, it has risen again to sing its praises to\n" +
+      "Bastet, the patron goddess who walks among her chosen.\n" +
+      "Per-Bastet is the city of cats and gnolls, of perfume\n" +
+      "and temples, of abounding gold, mithral, and diamond\n" +
+      "mines, of alchemy and prophesy, of imported spice\n" +
+      "and draconic slave markets, and of sumptuous brothels\n" +
+      "and brutal fighting pits. With its mercurial patron\n" +
+      "goddess and a populace of myriad carnivorous races and\n" +
+      "predatory species, the city thrives on the energy of its\n" +
+      "own lack of harmony.",
+    locale: true,
   },
   {
     name: "Beware Yulecat",
@@ -49,6 +74,18 @@ export const sourceData: Source[] = [
       "der durch die Straßen schleicht und diejenigen verschlingt, die keine neuen Kleider bekommen haben, sowie\n" +
       "diejenigen, die ihnen Schutz bieten.",
     details: true,
+    englischDescription:
+      "Welcome to Cold Corners, in the frozen depths of the Northlands! Beware the\n" +
+      "Yule Cat is a seasonally themed adventure for Tier 2 characters.\n" +
+      "Set in the village of Köldhorn (Cold Corners) and the nearby peak of\n" +
+      "Snörfjall (Snow Mountain), the adventure incorporates elements of Icelandic legends\n" +
+      "and monsters, with some background information explaining the tale’s origins. The\n" +
+      "adventurers arrive in the village of Köldhorn just ahead of a fierce storm on a wintery\n" +
+      "Yule eve, only to find the villagers unwilling to offer shelter or hospitality. They soon\n" +
+      "learn that the town is to be visited by the ferocious Jólakötturinn — the Yule Cat —\n" +
+      "who stalks the streets and devours those who haven’t received new clothes, as well as\n" +
+      "those who offer them shelter.",
+    locale: true,
   },
   {
     name: "Chentoufi Eye",
@@ -60,6 +97,13 @@ export const sourceData: Source[] = [
       "Abenteurer beenden ihr letztes Abenteuer auf großartige filmische Weise, müssen aber im Jahr nach Chentoufi zurückkehren\n" +
       "um sich auszuruhen und zu erholen.",
     details: true,
+    englischDescription:
+      "This short adventure module was developed as a special offering for Gary Con XIII, and seeks to bring more\n" +
+      "depth and context to the great city of Chentoufi. The adventure is set in the fantastic WORLD of OKKORIM™\n" +
+      "[oh-KAW-reem], a harsh land where only the cunning and powerful prosper. The scenario unfolds with the\n" +
+      "adventurers completing their last adventure in a great cinematic fashion, but must return to Chentoufi in\n" +
+      "order to rest and recuperate.",
+    locale: true,
   },
   {
     name: "Chentoufi Heart",
@@ -71,6 +115,13 @@ export const sourceData: Source[] = [
       "spielt dort, wo das vorherige Abenteuer aufgehört hat, im unterirdischen Komplex unter dem Akrubulis von\n" +
       "Chentoufi.",
     details: true,
+    englischDescription:
+      "This short adventure module was developed as a special offering for Gary Con XV, and continues events from\n" +
+      "Episode 1 - The Eye of Chentoufi. The adventures will find themselves in the fantastic WORLD of\n" +
+      "OKKORIM™ [oh-KAW-reem], a harsh land where only the cunning and powerful prosper. The scenario\n" +
+      "unfolds where the previous adventure left off, in the underground complex beneath the Akrubulis of\n" +
+      "Chentoufi.",
+    locale: true,
   },
   {
     name: "Chentoufi Fate",
@@ -82,6 +133,13 @@ export const sourceData: Source[] = [
       "mächtig gedeihen. Das Szenario entfaltet sich, indem die Abenteurer ihr letztes Abenteuer in einem großartigen Zustand abschließen\n" +
       "Filmmode, muss aber nach Chentoufi zurückkehren, um sich auszuruhen und zu erholen",
     details: true,
+    englischDescription:
+      "This series was originally thought up as a single adventure module meant as a special offering for Gary\n" +
+      "Con XIII, and sought to bring more depth and context to the great city of Chentoufi. The adventure is\n" +
+      "set in the fantastic WORLD of OKKORIMTM [oh-KAW-reem], a harsh land where only the cunning and\n" +
+      "powerful prosper. The scenario unfolds with the adventurers completing their last adventure in a great\n" +
+      "cinematic fashion, but must return to Chentoufi in order to rest and recuperate",
+    locale: true,
   },
   {
     name: "Crypt of the Crimson King",
@@ -96,6 +154,16 @@ export const sourceData: Source[] = [
       "Kloster, wenn sie den Kindern des Crimson King dabei helfen\n" +
       "Räumung ihres Cenobiums..",
     details: true,
+    englischDescription:
+      "The adventure begins when a lone monk approaches the party\n" +
+      "and petitions them for help. He escorts them to an encampment\n" +
+      "where the rest of his order, the Children of the Crimson King, are\n" +
+      "staying. The leader of the order, Estabor, reveals that something\n" +
+      "extraplanar escaped from an artifact in the monastery, forcing\n" +
+      "the order to flee. The party can have their pick of items from the\n" +
+      "monastery, if they assist the Children of the Crimson King in\n" +
+      "clearing out their cenobium",
+    locale: true,
   },
   {
     name: "Dwarven Fiasco",
@@ -116,6 +184,23 @@ export const sourceData: Source[] = [
       "Sie sind vollständig die Gruppe, die benötigt wird, um den Zwergenlich zu beseitigen\n" +
       "Haeferic von seinem Schlafplatz.",
     details: true,
+    englischDescription:
+      "This adventure is written for the world of Whisper & Venom\n" +
+      "(available from Necromancer Games). It is set in a cliff-\n" +
+      "side dwarven monastery at the northern edge of the civi-\n" +
+      "lized lands, between the Whisper Vale and the wilds of the\n" +
+      "Gauntswept. Farther north is the land of the frost giants.\n" +
+      "For centuries, the temple and the neighboring city of Cleft\n" +
+      "have stood as the main defense against the sporadic raids of\n" +
+      "beasts and monstrous humanoids from the North. Howe-\n" +
+      "ver, a poorly timed cosmic event put the monastery in the\n" +
+      "hands of a dwarven lich. Due to the vagaries of youth and\n" +
+      "the lassitude of age, Cleft is far from the industrious city\n" +
+      "it once was. While your players may not be the political\n" +
+      "champions required to kick Cleft in the backside, hope-\n" +
+      "fully they are the group needed to remove the dwarven lich\n" +
+      "Haeferic from his roost.",
+    locale: true,
   },
   {
     name: "Enigma in the Maze",
@@ -129,6 +214,19 @@ export const sourceData: Source[] = [
       "Irre Labyrinth und gehen, um ihre Feinde zu besiegen\n" +
       "Weg.",
     details: true,
+    englischDescription:
+      "At its heart, Enigma is a simple seek-and-explore\n" +
+      "adventure. The PCs will gain the key to entering the\n" +
+      "First Labyrinth, the world maze where all mazes\n" +
+      "connect, in its least dangerous location closest to its\n" +
+      "Heart. They need to administer the curative to the\n" +
+      "mad maze and leave, defeating their enemies on the\n" +
+      "way. Sadly, the Heart of Roshgazi is more insane than\n" +
+      "even the minotaurs who tend it guessed and, once the\n" +
+      "PCs enter its grasp, they find more trouble than they\n" +
+      "bargained for as they are taken from one strange maze\n" +
+      "to another on their journey to the Heart itself.",
+    locale: true,
   },
   {
     name: "Fires of War",
@@ -145,6 +243,18 @@ export const sourceData: Source[] = [
       "brutaler Fel Kade, ein alter Kamerad von Anders, der vermutet wurde\n" +
       "tot und sinnt auf Rache.",
     details: true,
+    englischDescription:
+      "It begins when the party arrives at a military encampment. Ander\n" +
+      "Scorchheart, who holds command, fills them in on the current\n" +
+      "state of affairs. A few days ago, the dangerous conscripted sorcerer\n" +
+      "Mercy was involved in a failed escape attempt orchestrated\n" +
+      "by The Sons of Mercy (a splinter faction within the conscript\n" +
+      "band known as The Gallows Boys), and was temporarily\n" +
+      "moved to Ander’s unit. Rumors are also brewing that the enemy\n" +
+      "mercenaries of Carrion Company are on the move, led by the\n" +
+      "brutal Fel Kade, an old comrade of Ander’s, who was presumed\n" +
+      "dead, and seeks vengeance.",
+    locale: true,
   },
   {
     name: "Forgotten Oasis",
@@ -163,6 +273,20 @@ export const sourceData: Source[] = [
       "Konstitution rettender Wurf oder eingeschläfert werden und\n" +
       "unter die Oase gezogen",
     details: true,
+    englischDescription:
+      "The oasis appears to travelers in the desert in\n" +
+      "moments of great need. Those who are becoming\n" +
+      "dehydrated and beginning to hallucinate might\n" +
+      "summon it simply by force of their need for suste-\n" +
+      "nance, and it does indeed prove to be an excellent\n" +
+      "place to rest to begin with.\n" +
+      "Palm trees stretch lazily over a lake with drinkable\n" +
+      "water. The immediate effect is to remove all levels\n" +
+      "of exhaustion from the person who drinks from it,\n" +
+      "but 1 minute later they must succeed on a DC 17\n" +
+      "Constitution saving throw or be put to sleep and\n" +
+      "pulled beneath the oasis.",
+    locale: true,
   },
   {
     name: "Fungus",
@@ -179,6 +303,18 @@ export const sourceData: Source[] = [
       "nichts mehr davon. Sie erwachten zum Frühstück, fütterten ihre Katzen,\n" +
       "und machten mit ihrem Leben weiter",
     details: true,
+    englischDescription:
+      "It began with a strange flash seen from the surface of the moon\n" +
+      "Sybil. The prophets and oracles swore this was a bad omen, for\n" +
+      "the cats talked more than normal and ran about as if their tails\n" +
+      "were on fire. The oracles had no way of knowing the truth, though\n" +
+      "some used their magic to see across the void of space between\n" +
+      "their world and the near moon. All that was revealed was a field of\n" +
+      "shattered crystals and nothing more. The strongest among them\n" +
+      "perceived only a faint beam from the deeper darkness and thought\n" +
+      "nothing more of it. They awoke to their breakfast, fed their cats,\n" +
+      "and moved on with their lives.",
+    locale: true,
   },
   {
     name: "Garden of Statuary",
@@ -200,6 +336,23 @@ export const sourceData: Source[] = [
       "präzise Darstellung der Ähnlichkeit von eindeutig\n" +
       "Kreaturen bis ins kleinste Detail.",
     details: true,
+    englischDescription:
+      "Whatever the season was outside before you\n" +
+      "arrived in this place, the inside of the garden is\n" +
+      "eternally summer down to the constant buzzing\n" +
+      "of insects.\n" +
+      "When the sun begins to go down in this place,\n" +
+      "fireflies emerge. Each tiny insect sheds bright\n" +
+      "light out to 20 feet when it glows.\n" +
+      "The glade is crowded by various plants including\n" +
+      "several stonesnappers and characters who suc-\n" +
+      "ceed on a DC 14 Wisdom (Perception) check\n" +
+      "spot humanoid statues between some of the\n" +
+      "plants.\n" +
+      "More statues dot the garden further inside, each\n" +
+      "precisely representing the likeness of distinct\n" +
+      "creatures down to the most minute detail.",
+    locale: true,
   },
   {
     name: "Gods of the Empires",
@@ -215,6 +368,17 @@ export const sourceData: Source[] = [
       "of the deities of their new domains and on occasion incorporated\n" +
       "some of them into their own imperial pantheon.",
     details: true,
+    englischDescription:
+      "More than 3,600 years ago, the Polemarch Oerson led the\n" +
+      "Hyperborean Legion into Akados from the far northern continent\n" +
+      "of Boros. As the Hyperboreans spread throughout Akados and\n" +
+      "then into Libynos, they brought with them the traditions of their\n" +
+      "homeland and the worship of their gods. The inhabitants of the\n" +
+      "many lands they conquered in time came to venerate some of\n" +
+      "these foreign gods. At the same time, the Hyperboreans learned\n" +
+      "of the deities of their new domains and on occasion incorporated\n" +
+      "some of them into their own imperial pantheon.",
+    locale: true,
   },
   {
     name: "Heresy",
@@ -234,6 +398,21 @@ export const sourceData: Source[] = [
       "Betrachten Sie es als einen freundlichen, praktikablen Zwischenstopp zum Ausruhen, Nachschub,\n" +
       "und finde einen kalten Krug Bier. Warum also der abrupte Wechsel?",
     details: true,
+    englischDescription:
+      "Heresy of Rot begins in the small town of Fetterwald, a neglec\n" +
+      "ted settlement that has seen better days. Once a trusted water\n" +
+      "ing hole for those headed north, it now seems to be gradually\n" +
+      "fading away. Ranches stand derelict and abandoned, while the\n" +
+      "cornfields and woods have grown wild and thick with no axe\n" +
+      "to cut them. Many of Fetterwald’s homes and storefronts are\n" +
+      "in general disrepair, and its once lush fields have gone to seed.\n" +
+      "The whole town has an air of desolation, as if it’s simply one bad\n" +
+      "season away from complete abandonment.\n" +
+      "While hardship has surely come to Fetterwald, things were not\n" +
+      "always this way. In days past, caravan masters and travelers re\n" +
+      "member it as a friendly, viable stopover point to rest, resupply,\n" +
+      "and find a cold mug of ale. So why the abrupt change?",
+    locale: true,
   },
   {
     name: "Lake of Dust",
@@ -253,6 +432,21 @@ export const sourceData: Source[] = [
       "Stadt, die Blut tropfte, mit der sie bereits einige Erfahrungen haben\n" +
       "die Gefahr des Ödlandes.)",
     details: true,
+    englischDescription:
+      "The continental shelf and lightless abysses of the deep ocean are the\n" +
+      "sahuagins’ natural habitat. They swim up rivers only when they’re\n" +
+      "raiding inland settlements for treasure and prisoners. Very rarely, for\n" +
+      "reasons known only to their priestesses, sahuagin sometimes esta-\n" +
+      "blish small religious colonies in remote freshwater lakes. The likeliest\n" +
+      "reason is that the area has (in the sahuagins’ minds, anyway) some\n" +
+      "obscure significance to their bloodthirsty, shark-like deity.\n" +
+      "This wasteland wasn’t always a desert. Centuries ago, it had rivers,\n" +
+      "lakes fringed with date palms, and seasonal greenery. The rain\n" +
+      "petered out, and the lakes and rivers dried up. Now only a few\n" +
+      "meager, widely spaced oases remain. (If your characters played The\n" +
+      "City that Dripped Blood, they already have some experience with\n" +
+      "the danger of the Wasteland.)",
+    locale: true,
   },
   {
     name: "Path of the Vanished",
@@ -265,6 +459,14 @@ export const sourceData: Source[] = [
       "von Begegnungen und führt die PCs letztendlich aus der Stadt in die Stadt\n" +
       "Wildnis-Lodge",
     details: true,
+    englischDescription:
+      "In part one, Legacy of the Vanished, the PCs are part of a massive\n" +
+      "search to locate the Raider base and end their depravations (Chapter I).\n" +
+      "The PCs find themselves in a massive tidewater swamp and stumble into\n" +
+      "an ancient, half-sunken city (Chapter II). The city includes a variety\n" +
+      "of encounters and ultimately leads the PCs out of the city and to the\n" +
+      "Wilderness Lodge",
+    locale: true,
   },
   {
     name: "Rat King's Sewer",
@@ -282,6 +484,19 @@ export const sourceData: Source[] = [
       "Art tödlicher Kreaturen, also vielleicht die Fähigkeit, mit Kakerlaken zu sprechen\n" +
       "erweisen sich einfach als nützlich.",
     details: true,
+    englischDescription:
+      "Rat King’s Sewer is a dungeon crawl with a mystery set in the sewers\n" +
+      "beneath the city of Eastgate in the Borderlands Provinces. Found on\n" +
+      "the eastern side of the continent of Akados in the world of Frog God\n" +
+      "Games’ Lost Lands, Eastgate is a bustling city at the mouth of the\n" +
+      "Amrin River. This adventure is designed for Tier 2 characters with a\n" +
+      "good mix of combat, spellcasting, and trap-finding abilities. As most\n" +
+      "of the adventure takes place in the sewers, and nearly all of it in an\n" +
+      "urban setting, wilderness-orientated characters might find themselves\n" +
+      "at a disadvantage. Then again, the sewers are a maze filled with all\n" +
+      "manner of deadly creatures, so the ability to talk to cockroaches might\n" +
+      "just prove useful.",
+    locale: true,
   },
   {
     name: "Rule of Three",
@@ -296,6 +511,16 @@ export const sourceData: Source[] = [
       "einer ihrer Parteifreunde. Brennan floh und ließ den Schurken zurück,\n" +
       "Cadmus, ihrem Schicksal durch die Hände der drei Zauberer.",
     details: true,
+    englischDescription:
+      "It begins when the party investigates a house haunted by an\n" +
+      "unstable and violent ghost. Once they work their way through the\n" +
+      "house, they learn that the ghost, Brennan, was once an adventurer,\n" +
+      "whose party came to a tragic end half a century earlier. Back then,\n" +
+      "while exploring some ancient ruins, a mysterious entity offered the\n" +
+      "party’s three spellcasters immortality if they sacrificed the life of\n" +
+      "one of their fellow party members. Brennan fled, leaving the rogue,\n" +
+      "Cadmus, to their fate at the hands of the three spellcasters.",
+    locale: true,
   },
   {
     name: "Search for Darwah's Temple",
@@ -317,6 +542,23 @@ export const sourceData: Source[] = [
       "Land – ein äußerst gefährlicher Ort für Unwissende oder\n" +
       "unachtsam.",
     details: true,
+    englischDescription:
+      "Welcome to Okkorim, a new fantasy setting\n" +
+      "forthcoming from Luke Gygax. This module is the\n" +
+      "tournament module for Gary Con V. The scenario\n" +
+      "takes place in the Blighted Lands, deep in the heart of\n" +
+      "Okkorim. Information on the history and environment\n" +
+      "is included with this module.\n" +
+      "Okkorim is a harsh setting where only the strong and\n" +
+      "cunning can expect to survive. It’s a place of adventure,\n" +
+      "arcane magic, dark power, and deadly foes. This first\n" +
+      "adventure briefl y touches on the City of Chentoufi with\n" +
+      "its labyrinth of political factions and machinations,\n" +
+      "dark sorcery, secret cults & criminal organizations,\n" +
+      "and leads the adventurers straight into The Blighted\n" +
+      "Lands — a most dangerous place for the ignorant or\n" +
+      "unwary.",
+    locale: true,
   },
   {
     name: "Spears in Ice",
@@ -331,6 +573,15 @@ export const sourceData: Source[] = [
       "überleben, bis der Wind des Schicksals aus einer neuen Richtung weht und\n" +
       "lass sie entkommen.",
     details: true,
+    englischDescription:
+      "Our young heroes, new to the service of the Jarl Olaf Henrikson\n" +
+      "of Silvermead Hall, are stranded on a strange iceberg found floating\n" +
+      "in the North Sea. Left behind after foul magic carried away the\n" +
+      "jarl and his ship, this plucky band of young heroes must explore\n" +
+      "the iceberg, delve into the frozen city at its heart, and somehow\n" +
+      "survive until the winds of fate blow from a new direction and\n" +
+      "allow them to escape",
+    locale: true,
   },
   {
     name: "Splinters of Faith",
@@ -342,6 +593,8 @@ export const sourceData: Source[] = [
       "Zepter des Glaubens, um ihnen zu helfen, wenn sie sich schließlich dem Todespriester stellen.\n" +
       "Diese Kampagne ist darauf ausgelegt, Charaktere vom 1. Level bis zum 14. Level oder höher zu führen.",
     details: true,
+    englischDescription: "",
+    locale: true,
   },
   {
     name: "Spring Rites",
@@ -369,6 +622,17 @@ export const sourceData: Source[] = [
       "Erkundung und Kampf, wobei soziale Angelegenheiten an erster Stelle stehen\n" +
       "Drittel der Abenteuer.",
     details: true,
+    englischDescription:
+      "Our heroes, or would-be heroes as the case may be, are retainers,\n" +
+      "hangers-on, and lesser relations of the Jarl Olaf Henrikson. They\n" +
+      "have spent the past winter at his home, Silvermeade Hall, and\n" +
+      "spring is well on its way. Not yet having won a place in his retinue,\n" +
+      "they should be eager to please and impress the jarl. He is known\n" +
+      "as a ring-giver, one who rewards those in his service, and to join\n" +
+      "his retinue is a mark of honor and distinction. Unfortunately, all he\n" +
+      "needs of our heroes today is to guard his three daughters as they\n" +
+      "pick flowers for the upcoming feast of Freya.",
+    locale: true,
   },
   {
     name: "Tomb of Mercy",
@@ -390,6 +654,23 @@ export const sourceData: Source[] = [
       "Und jetzt bereiten Sie sich darauf vor, in das längst Vergessene einzutauchen\n" +
       "Grab der Barmherzigkeit!",
     details: true,
+    englischDescription:
+      "Welcome to the Tomb of Mercy! Within these pages is\n" +
+      "a unique twist on the standard 5th-edition adventure.\n" +
+      "Here, the players and the DM compete in a race against\n" +
+      "time to see if all humanity can be saved, or if the\n" +
+      "fiendish servants of the Hells can corrupt the world for\n" +
+      "their own nefarious purposes. Special time-keeping\n" +
+      "and resurrection mechanics are included to keep the\n" +
+      "pace exciting and the plot moving.\n" +
+      "A couple of special handouts can be found at the\n" +
+      "back of the book that include a set of pre-generated\n" +
+      "characters and a deck of cards used during play. Feel\n" +
+      "free to make copies of these pages for use during the\n" +
+      "game.\n" +
+      "And now, prepare to delve into the long-forgotten\n" +
+      "Tomb of Mercy!",
+    locale: true,
   },
   {
     name: "Tomb of Tiberesh",
@@ -423,6 +704,35 @@ export const sourceData: Source[] = [
       "Interaktion und eine Handlungswende Ihrer Wahl aus dem\n" +
       "Seitenleiste am Ende von Teil 3.",
     details: true,
+    englischDescription:
+      "A traveling archaeological team, Golden Falcon\n" +
+      "Antiquities (GFA), has set up a bustling encampment\n" +
+      "just outside the eastern perimeter of Per-Bastet’s walls\n" +
+      "and south of the river. These scholars issued a call for\n" +
+      "assistance in surveying residential areas, mapping\n" +
+      "tombs, and recovering relics and valuables from\n" +
+      "within them. Golden Falcon Antiquities pays well\n" +
+      "for this assistance, and anyone pursuing these jobs is\n" +
+      "thoroughly interviewed in an effort to weed out lurking\n" +
+      "thieves and looters. While documenting the history of\n" +
+      "the local people is important to GFA, its top priority\n" +
+      "remains uncovering what lies inside the Pyramid of\n" +
+      "Tiberesh. GFA is seeking a very particular group of\n" +
+      "explorers with the right combination of talents who\n" +
+      "will agree to a rigorous contract relating to anything\n" +
+      "they find inside the pyramid.\n" +
+      "While many adventurers seek fame and fortune in\n" +
+      "Anu-Asir, GFA will only retain one group of explorers\n" +
+      "at a time for security reasons. An escort will see them\n" +
+      "to the pyramid and set up camp outside for three days\n" +
+      "awaiting their return and then bring the group back\n" +
+      "to the main GFA encampment for contract fulfillment\n" +
+      "and distribution of anything brought out of the tomb.\n" +
+      "Provided they survive, adventurers meet back\n" +
+      "with GFA at the end of the adventure for one final\n" +
+      "interaction, and a plot twist of your choice from the\n" +
+      "sidebar at the end of Part 3.",
+    locale: true,
   },
   {
     name: "Triptych",
@@ -440,6 +750,19 @@ export const sourceData: Source[] = [
       "Geistlicher der Gruppe, der diese große und heilige Aufgabe übernehmen soll\n" +
       "Holen Sie sich das Triptychon der Transzendenz zurück",
     details: true,
+    englischDescription:
+      "A holy triptych (three-paneled artifact) has been stolen from\n" +
+      "the temple of the good deity of one or more characters of the\n" +
+      "adventuring group. This relic is extremely powerful and, when\n" +
+      "intact, offers power and great protection to followers of the\n" +
+      "triptych’s creator. However, evil minions of a rival deity, Egramish,\n" +
+      "the Goddess of Whispers and Shadows, stole and disassembled\n" +
+      "the artifact. They hid the three panels in separate locations within\n" +
+      "their domain, the Mountain of Whispers. Priests of the character’s\n" +
+      "god are desperate to retrieve the lost item and urge the chosen\n" +
+      "cleric of the group to undertake this great and holy quest to\n" +
+      "recover the Triptych of Transcendency",
+    locale: true,
   },
   {
     name: "Witch of Wilderlands",
@@ -456,6 +779,18 @@ export const sourceData: Source[] = [
       "Im Wald werden sie von seltsamen Visionen und verwirrenden Stimmen heimgesucht.\n" +
       "sowie von verdrehten Wesen aus morschem Holz; Fäulnis.",
     details: true,
+    englischDescription:
+      "It begins in a small town, recently cut off from the wider world by\n" +
+      "the increasing danger of its surrounding forest. Rumors abound\n" +
+      "that a woman who visited town briefly a month ago is an evil\n" +
+      "witch, who put a curse on the forest. All that is known of her is\n" +
+      "that she left to investigate ruins, deep in the forest, in search of a\n" +
+      "powerful artifact.\n" +
+      "The party can attempt to seek her out or, at least, put an end to the\n" +
+      "dangerous enchantments which lie over the area. As they search\n" +
+      "the forest, they are beset by strange visions and confusing voices,\n" +
+      "as well as by twisted beings of rotten wood; rot blights.",
+    locale: true,
   },
   {
     name: "Wizard's Wake",
@@ -474,6 +809,20 @@ export const sourceData: Source[] = [
       "Das Leben auf den Gylathaceen ist größtenteils sicher\n" +
       "und still.",
     details: true,
+    englischDescription:
+      "Surrounded on all sides by the Rending Reef, the\n" +
+      "Gylathacean Isles are difficult to navigate to safely\n" +
+      "and even more difficult to leave. As a result they\n" +
+      "tend to be very isolated from the outside world\n" +
+      "with few of the beings who live there travelling\n" +
+      "far from their own shores and even fewer visitors.\n" +
+      "Trade to and from the islands is almost nonex-\n" +
+      "istent. Every so often they a shipwrecked crew\n" +
+      "integrates onto the islands, but rarely are there\n" +
+      "enough survivors for this to be any sort of issue.\n" +
+      "For the most part, life on the Gylathaceans is safe\n" +
+      "and quiet.",
+    locale: true,
   },
   {
     name: "Zoo Mafia",
@@ -487,5 +836,14 @@ export const sourceData: Source[] = [
       "um ihr Ansehen in der Welt der organisierten Kriminalität zu erhöhen, während der Tierpfleger\n" +
       "erleichtert alles andere.",
     details: true,
+    englischDescription:
+      "What is Zoo Mafia RPG?\n" +
+      "It’s a role-playing game about being a zoo animal, committing crimes and not\n" +
+      "letting the humans catch on that you are more than just zoo animals. All but\n" +
+      "one of the players form a gang called a mob. That one other player takes on\n" +
+      "the role of the Zookeeper. The mob will take on jobs and commit these crimes\n" +
+      "to increase their standing in the organized crime world while the Zookeeper\n" +
+      "facilitates everything else.",
+    locale: true,
   },
 ];

@@ -4,6 +4,7 @@ import { Grid } from "@mui/material";
 import { sourceData } from "@/sources.ts";
 import React from "react";
 import { Slider } from "@/components/ui/slider.tsx";
+import { Button } from "@/components/ui/button.tsx";
 
 function App() {
   const [data, setData] = React.useState(sourceData);
@@ -26,28 +27,44 @@ function App() {
         <Grid item xs={9}>
           <Masonry columns={slider[0]}>
             {data.map((source) => (
-              <button
+              <Card
                 key={source.image}
-                onClick={() => {
-                  source.details = !source.details;
-                  setData([...data]);
-                }}
+                className={
+                  "border p-0.5 bg-card-foreground border-card-foreground"
+                }
               >
-                <Card
-                  className={
-                    "border p-0.5 bg-card-foreground border-card-foreground"
-                  }
+                {source.details ? (
+                  <img src={source.image} alt={source.description} />
+                ) : (
+                  <div className={"flex flex-col"}>
+                    <h1 className={"text-2xl text-card"}>{source.name}</h1>
+                    <p className={"text-card"}>
+                      {source.locale
+                        ? source.description
+                        : source.englischDescription}
+                    </p>
+                    <Button
+                      className={"bg-cyan-900 text-card"}
+                      onClick={() => {
+                        source.locale = !source.locale;
+                        setData([...data]);
+                      }}
+                    >
+                      Sprache wechseln
+                    </Button>
+                  </div>
+                )}
+                <Button
+                  className={"bg-cyan-900 text-card w-full"}
+                  onClick={() => {
+                    source.details = !source.details;
+                    setData([...data]);
+                  }}
                 >
-                  {source.details ? (
-                    <img src={source.image} alt={source.description} />
-                  ) : (
-                    <div className={"flex flex-col"}>
-                      <h1 className={"text-2xl text-card"}>{source.name}</h1>
-                      <p className={"text-card"}>{source.description}</p>
-                    </div>
-                  )}
-                </Card>
-              </button>
+                  {" "}
+                  Details{" "}
+                </Button>
+              </Card>
             ))}
           </Masonry>
         </Grid>
